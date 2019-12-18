@@ -1,0 +1,72 @@
+2019-12-10T16:23:16.499+0530 I  CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2019-12-10T16:23:16.600+0530 I  CONTROL  [initandlisten] MongoDB starting : pid=3345 port=27017 dbpath=/home/saroj/STUDY/programs/nodeJS/userAuth/data/db/ 64-bit host=holy-goblin
+2019-12-10T16:23:16.600+0530 I  CONTROL  [initandlisten] db version v4.2.0
+2019-12-10T16:23:16.600+0530 I  CONTROL  [initandlisten] git version: a4b751dcf51dd249c5865812b390cfd1c0129c30
+2019-12-10T16:23:16.600+0530 I  CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.1  11 Sep 2018
+2019-12-10T16:23:16.600+0530 I  CONTROL  [initandlisten] allocator: tcmalloc
+2019-12-10T16:23:16.600+0530 I  CONTROL  [initandlisten] modules: none
+2019-12-10T16:23:16.600+0530 I  CONTROL  [initandlisten] build environment:
+2019-12-10T16:23:16.600+0530 I  CONTROL  [initandlisten]     distmod: ubuntu1804
+2019-12-10T16:23:16.600+0530 I  CONTROL  [initandlisten]     distarch: x86_64
+2019-12-10T16:23:16.600+0530 I  CONTROL  [initandlisten]     target_arch: x86_64
+2019-12-10T16:23:16.600+0530 I  CONTROL  [initandlisten] options: { storage: { dbPath: "/home/saroj/STUDY/programs/nodeJS/userAuth/data/db/", directoryPerDB: true }, systemLog: { destination: "file", logAppend: true, path: "/home/saroj/STUDY/programs/nodeJS/userAuth/log/mongodb.log" } }
+2019-12-10T16:23:16.601+0530 I  STORAGE  [initandlisten] 
+2019-12-10T16:23:16.601+0530 I  STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2019-12-10T16:23:16.601+0530 I  STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2019-12-10T16:23:16.625+0530 I  STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=1195M,cache_overflow=(file_max=0M),session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress],
+2019-12-10T16:23:17.965+0530 I  STORAGE  [initandlisten] WiredTiger message [1575975197:965814][3345:0x7f7704ddeb00], txn-recover: Set global recovery timestamp: (0,0)
+2019-12-10T16:23:18.249+0530 I  RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2019-12-10T16:23:18.558+0530 I  STORAGE  [initandlisten] Timestamp monitor starting
+2019-12-10T16:23:18.690+0530 I  CONTROL  [initandlisten] 
+2019-12-10T16:23:18.690+0530 I  CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2019-12-10T16:23:18.690+0530 I  CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2019-12-10T16:23:18.690+0530 I  CONTROL  [initandlisten] 
+2019-12-10T16:23:18.691+0530 I  CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2019-12-10T16:23:18.691+0530 I  CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2019-12-10T16:23:18.691+0530 I  CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2019-12-10T16:23:18.691+0530 I  CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2019-12-10T16:23:18.691+0530 I  CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2019-12-10T16:23:18.691+0530 I  CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2019-12-10T16:23:18.691+0530 I  CONTROL  [initandlisten] 
+2019-12-10T16:23:18.810+0530 I  STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: 13c79001-83bc-47b3-8ff2-118b3a8cca17 and options: { uuid: UUID("13c79001-83bc-47b3-8ff2-118b3a8cca17") }
+2019-12-10T16:23:19.162+0530 I  INDEX    [initandlisten] index build: done building index _id_ on ns admin.system.version
+2019-12-10T16:23:19.173+0530 I  SHARDING [initandlisten] Marking collection admin.system.version as collection version: <unsharded>
+2019-12-10T16:23:19.173+0530 I  COMMAND  [initandlisten] setting featureCompatibilityVersion to 4.2
+2019-12-10T16:23:19.183+0530 I  SHARDING [initandlisten] Marking collection local.system.replset as collection version: <unsharded>
+2019-12-10T16:23:19.240+0530 I  STORAGE  [initandlisten] Flow Control is enabled on this deployment.
+2019-12-10T16:23:19.259+0530 I  SHARDING [initandlisten] Marking collection admin.system.roles as collection version: <unsharded>
+2019-12-10T16:23:19.283+0530 I  STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: 7bd44397-3cb7-4fb2-a155-8410270504b5 and options: { capped: true, size: 10485760 }
+2019-12-10T16:23:19.551+0530 I  INDEX    [initandlisten] index build: done building index _id_ on ns local.startup_log
+2019-12-10T16:23:19.552+0530 I  SHARDING [initandlisten] Marking collection local.startup_log as collection version: <unsharded>
+2019-12-10T16:23:19.553+0530 I  FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/home/saroj/STUDY/programs/nodeJS/userAuth/data/db/diagnostic.data'
+2019-12-10T16:23:19.582+0530 I  SHARDING [LogicalSessionCacheRefresh] Marking collection config.system.sessions as collection version: <unsharded>
+2019-12-10T16:23:19.582+0530 I  NETWORK  [initandlisten] Listening on /tmp/mongodb-27017.sock
+2019-12-10T16:23:19.583+0530 I  NETWORK  [initandlisten] Listening on 127.0.0.1
+2019-12-10T16:23:19.583+0530 I  NETWORK  [initandlisten] waiting for connections on port 27017
+2019-12-10T16:23:19.675+0530 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: config.system.sessions does not exist
+2019-12-10T16:23:19.675+0530 I  STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with provided UUID: 5fc9c9bc-c386-453b-a4b4-2a36bec75cc9 and options: { uuid: UUID("5fc9c9bc-c386-453b-a4b4-2a36bec75cc9") }
+2019-12-10T16:23:19.929+0530 I  INDEX    [LogicalSessionCacheRefresh] index build: done building index _id_ on ns config.system.sessions
+2019-12-10T16:23:20.218+0530 I  INDEX    [LogicalSessionCacheRefresh] index build: starting on config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 } using method: Hybrid
+2019-12-10T16:23:20.218+0530 I  INDEX    [LogicalSessionCacheRefresh] build may temporarily use up to 500 megabytes of RAM
+2019-12-10T16:23:20.218+0530 I  INDEX    [LogicalSessionCacheRefresh] index build: collection scan done. scanned 0 total records in 0 seconds
+2019-12-10T16:23:20.219+0530 I  INDEX    [LogicalSessionCacheRefresh] index build: inserted 0 keys from external sorter into index in 0 seconds
+2019-12-10T16:23:20.311+0530 I  INDEX    [LogicalSessionCacheRefresh] index build: done building index lsidTTLIndex on ns config.system.sessions
+2019-12-10T16:23:20.354+0530 I  COMMAND  [LogicalSessionCacheRefresh] command config.system.sessions command: createIndexes { createIndexes: "system.sessions", indexes: [ { key: { lastUse: 1 }, name: "lsidTTLIndex", expireAfterSeconds: 1800 } ], $db: "config" } numYields:0 reslen:114 locks:{ ParallelBatchWriterMode: { acquireCount: { r: 2 } }, ReplicationStateTransition: { acquireCount: { w: 3 } }, Global: { acquireCount: { r: 1, w: 2 } }, Database: { acquireCount: { r: 1, w: 2, W: 1 } }, Collection: { acquireCount: { r: 4, w: 1, R: 1, W: 2 } }, Mutex: { acquireCount: { r: 3 } } } flowControl:{ acquireCount: 1 } storage:{} protocol:op_msg 678ms
+2019-12-10T16:23:51.300+0530 I  CONTROL  [signalProcessingThread] got signal 2 (Interrupt), will terminate after current cmd ends
+2019-12-10T16:23:51.301+0530 I  NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2019-12-10T16:23:51.301+0530 I  NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2019-12-10T16:23:51.301+0530 I  -        [signalProcessingThread] Stopping further Flow Control ticket acquisitions.
+2019-12-10T16:23:51.302+0530 I  CONTROL  [signalProcessingThread] Shutting down free monitoring
+2019-12-10T16:23:51.302+0530 I  FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2019-12-10T16:23:51.309+0530 I  STORAGE  [signalProcessingThread] Deregistering all the collections
+2019-12-10T16:23:51.309+0530 I  STORAGE  [signalProcessingThread] Timestamp monitor shutting down
+2019-12-10T16:23:51.309+0530 I  STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2019-12-10T16:23:51.347+0530 I  STORAGE  [signalProcessingThread] Shutting down session sweeper thread
+2019-12-10T16:23:51.348+0530 I  STORAGE  [signalProcessingThread] Finished shutting down session sweeper thread
+2019-12-10T16:23:51.348+0530 I  STORAGE  [signalProcessingThread] Shutting down journal flusher thread
+2019-12-10T16:23:51.402+0530 I  STORAGE  [signalProcessingThread] Finished shutting down journal flusher thread
+2019-12-10T16:23:51.403+0530 I  STORAGE  [signalProcessingThread] Shutting down checkpoint thread
+2019-12-10T16:23:51.403+0530 I  STORAGE  [signalProcessingThread] Finished shutting down checkpoint thread
+2019-12-10T16:23:52.048+0530 I  STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2019-12-10T16:23:52.048+0530 I  CONTROL  [signalProcessingThread] now exiting
+2019-12-10T16:23:52.048+0530 I  CONTROL  [signalProcessingThread] shutting down with code:0

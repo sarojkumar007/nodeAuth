@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Google';
+    src: url(google-sans-light.woff2);
+    font-style: normal;
+    font-weight: 100
+}
+
+body {
+    padding: 0px;
+    height: 100vh;
+    font: 16px Google,"Montserrat", sans-serif;
+}
+.container{
+    max-width: 500px;
+    margin: 30px auto;
+}
+h1,.container h2,.container p{
+    text-align: center;
+}
+ul.success li{
+    list-style: none;
+    padding: .7rem 1.2rem;
+    background-color: #00ff00;
+    color: #fff;
+    border-radius: 10px;
+}
+ul.error li{
+    list-style: none;
+    padding: .7rem 1.2rem;
+    background-color: #ff5252;
+    color: #000;
+    border-radius: 10px;
+}
+ul.warn li{
+    list-style: none;
+    padding: .7rem 1.2rem;
+    background-color: #efb514;
+    color: #154276;
+    border-radius: 10px;
+}

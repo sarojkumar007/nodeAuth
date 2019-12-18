@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h2.page-header Login
+  p Login to get awesome content
+  form(method='post',action='/users/login')
+   .form-group
+    label Username
+    input.form-control(name='username',type='text',placeholder='Enter Username',autocomplete='username')
+   .form-group
+    label Password
+    input.form-control(name='password',type='password',placeholder='Enter Password',autocomplete='current-password')
+    br
+    input.btn.btn-outline-primary(type='submit',value='Login',name='login')
+  br
+  p Don't have account?
+    a(href='/users/register')  Register
